@@ -58,7 +58,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#" class="nav__link">Pricing</a>
+              <a href="#pricing" class="nav__link">Pricing</a>
             </li>
 
             <li class="nav__item dropdown-item">
@@ -136,10 +136,561 @@
       </div>
     </header>
 
-    <main style="height: 2000px; padding: 20px">
-      <h1>Main Content</h1>
-      <p>Scroll down to see the sticky header in action.</p>
-    </main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Get <span class="highlight">Lead</span></h1>
+          <p class="hero__subtitle">
+            Powerful, simplified tool to send emails,<br />
+            create pages and automate your marketing.
+          </p>
+
+          <form class="hero__form" action="#">
+            <div class="input-group">
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                class="input-group__field"
+                aria-label="Email Address"
+              />
+              <button
+                type="submit"
+                class="btn btn-primary btn-pill input-group__btn"
+              >
+                SIGN UP FREE
+              </button>
+            </div>
+          </form>
+
+          <div class="hero__trust">
+            <span>Start for free</span>
+            <span class="divider">|</span>
+            <span>No credit required</span>
+            <span class="divider">|</span>
+            <span>Cancel anytime</span>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__image-wrapper">
+            <!-- <div class="blue-blob"></div> -->
+            <img
+              src="assets/img/hero.png"
+              alt="Happy woman holding laptop"
+              class="hero__image"
+            />
+          </div>
+
+          <div class="floating-cards">
+            <div class="feature-card">
+              <img
+                src="assets/img/email-icon.png"
+                alt="Email Marketing"
+                class="feature-card__icon"
+              />
+              <div class="feature-card__text">Email<br />Marketing</div>
+              <div class="feature-card__arrow">›</div>
+            </div>
+
+            <div class="feature-card">
+              <img
+                src="assets/img/marketing-icon.png"
+                alt="Marketing Automation"
+                class="feature-card__icon"
+              />
+              <div class="feature-card__text">Marketing<br />Automation</div>
+              <div class="feature-card__arrow">›</div>
+            </div>
+
+            <div class="feature-card">
+              <img
+                src="assets/img/sms-icon.png"
+                alt="SMS Marketing"
+                class="feature-card__icon"
+              />
+              <div class="feature-card__text">SMS<br />Marketing</div>
+              <div class="feature-card__arrow">›</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions">
+      <div class="container">
+        <h2 class="section-title">
+          Inbounding marketing solutions for
+          <span class="highlight">what you need to do</span>
+        </h2>
+
+        <div class="solutions__grid">
+          <div class="solution-card">
+            <div class="solution-card__header">
+              <img
+                src="assets/img/rocket.png"
+                alt="Rocket"
+                class="solution-card__icon"
+              />
+              <h3 class="solution-card__title">Get your business online</h3>
+            </div>
+            <p class="solution-card__desc">
+              A suite of free marketing tools designed to get your business
+              online and fuel it with a stream of new leads.
+            </p>
+            <a href="#" class="solution-card__link">LEARN MORE ></a>
+            <p class="solution-card__stat">
+              <span class="highlight-inline">Free-forever plan for</span> new
+              businesses
+            </p>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-card__header">
+              <img
+                src="assets/img/audience.png"
+                alt="Users"
+                class="solution-card__icon"
+              />
+              <h3 class="solution-card__title">Growing your audience</h3>
+            </div>
+            <p class="solution-card__desc">
+              Find new customers and build your emails list with lead generation
+              tools that turn anonymous connection into loyal fans.
+            </p>
+            <a href="#" class="solution-card__link">LEARN MORE ></a>
+            <p class="solution-card__stat">
+              Over
+              <span class="highlight-inline">1,000,000 leads</span> generated
+              monthly
+            </p>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-card__header">
+              <img
+                src="assets/img/engage.png"
+                alt="Headset"
+                class="solution-card__icon"
+              />
+              <h3 class="solution-card__title">Engage with customers</h3>
+            </div>
+            <p class="solution-card__desc">
+              A suite of free marketing tools designed to get your business
+              online and fuel it with a stream of new leads.
+            </p>
+            <a href="#" class="solution-card__link">LEARN MORE ></a>
+            <p class="solution-card__stat">
+              Over
+              <span class="highlight-inline">765,555,256 emails</span> delivered
+              weekly
+            </p>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-card__header">
+              <img
+                src="assets/img/cart.png"
+                alt="Cart"
+                class="solution-card__icon"
+              />
+              <h3 class="solution-card__title">Boost online sales</h3>
+            </div>
+            <p class="solution-card__desc">
+              Find new customers and build your emails list with lead generation
+              tools that turn anonymous connection into loyal fans.
+            </p>
+            <a href="#" class="solution-card__link">LEARN MORE ></a>
+            <p class="solution-card__stat">
+              <span class="highlight-inline">Thousands of trans</span>actions
+              processed daily
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="personalized-tools">
+      <div class="container">
+        <h2 class="section-title">
+          Personalized tools for <span class="highlight-text">who you are</span>
+        </h2>
+
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-card__image-wrapper">
+              <img
+                src="assets/img/entrepreneur.jpg"
+                alt="Entrepreneur"
+                class="tool-card__img"
+              />
+            </div>
+            <h3 class="tool-card__title">Entrepreneur</h3>
+            <p class="tool-card__desc">
+              Market your business online with features tha help you reach out
+              to potential clients and building relationship.
+            </p>
+            <a href="#" class="tool-card__link">LEARN MORE ></a>
+            <ul class="tool-card__features">
+              <li>
+                <img src="assets/img/em1.png" alt="" class="feature-icon" />
+                Email marketing
+              </li>
+              <li>
+                <img
+                  src="assets/img/arcticons_websitemonitor.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Website builder
+              </li>
+              <li>
+                <img
+                  src="assets/img/paid-ads.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Paid ads
+              </li>
+            </ul>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-card__image-wrapper">
+              <img
+                src="assets/img/online-marketer.png"
+                alt="Online marketer"
+                class="tool-card__img"
+              />
+            </div>
+            <h3 class="tool-card__title">Online marketer</h3>
+            <p class="tool-card__desc">
+              Make money from anywhere, with the flexibility to generate maximum
+              increase.
+            </p>
+            <a href="#" class="tool-card__link">LEARN MORE ></a>
+            <ul class="tool-card__features">
+              <li>
+                <img
+                  src="assets/img/email-icon.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Sales Funnels
+              </li>
+              <li>
+                <img src="assets/img/popup.png" alt="" class="feature-icon" />
+                Popup forms
+              </li>
+              <li>
+                <img
+                  src="assets/img/autoresponder.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Autoresponders
+              </li>
+            </ul>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-card__image-wrapper">
+              <img
+                src="assets/img/entrepre2.png"
+                alt="Entrepreneur"
+                class="tool-card__img"
+              />
+            </div>
+            <h3 class="tool-card__title">Entrepreneur</h3>
+            <p class="tool-card__desc">
+              Market your business online with features tha help you reach out
+              to potential clients and building relationship.
+            </p>
+            <a href="#" class="tool-card__link">LEARN MORE ></a>
+            <ul class="tool-card__features">
+              <li>
+                <img
+                  src="assets/img/marketing-icon.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Email marketing
+              </li>
+              <li>
+                <img
+                  src="assets/img/web-builder.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Website builder
+              </li>
+              <li>
+                <img
+                  src="assets/img/wpf_paid.png"
+                  alt=""
+                  class="feature-icon"
+                />
+                Paid ads
+              </li>
+            </ul>
+          </div>
+
+          <div class="tool-card">
+            <div class="tool-card__image-wrapper">
+              <img
+                src="assets/img/large-companies.png"
+                alt="Large companies"
+                class="tool-card__img"
+              />
+            </div>
+            <h3 class="tool-card__title">Large companies</h3>
+            <p class="tool-card__desc">
+              Increase ROI with tools tailored and scaled to your business for
+              better results across the entire customer journey.
+            </p>
+            <a href="#" class="tool-card__link">LEARN MORE ></a>
+            <ul class="tool-card__features">
+              <li>
+                <img src="assets/img/t-email.png" alt="" class="feature-icon" />
+                Transaction emails
+              </li>
+              <li class="no-icon">Dedicated support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tools-cta">
+          <p class="tools-cta__text">+23 more features to run your campaigns</p>
+          <a href="#" class="btn btn-primary btn-pill btn-large"
+            >EXPLORE ALL FEATURES</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="pricing__bg">
+        <svg viewBox="0 0 1440 400" preserveAspectRatio="none">
+          <path
+            d="M0,200 C300,400 400,-100 700,200 C1000,500 1200,0 1440,100"
+            fill="none"
+            stroke="rgba(255,255,255,0.7)"
+            stroke-width="2"
+            stroke-dasharray="8, 8"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="container pricing__container">
+        <div class="pricing__header">
+          <h2 class="pricing__title">
+            <span class="highlight-pricing"
+              >Unbeatable price for all in one marketing software</span
+            >
+          </h2>
+          <p class="pricing__subtitle">
+            Plans and features to empower your business on every stage of its
+            growth.
+          </p>
+        </div>
+
+        <div class="pricing-table">
+          <div class="pricing-card">
+            <h3 class="pricing-card__type">FREE</h3>
+            <p class="pricing-card__desc">
+              Designed for businesses ready to get online easily.
+            </p>
+            <div class="pricing-card__price">Free-forever</div>
+            <div class="pricing-card__features-title">Including:</div>
+            <ul class="pricing-card__features">
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Email marketing
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Website builder
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Connect a domain
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />List for up to 500 contacts
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Landing pages
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Signup and contact forms
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-card pricing-card--dark">
+            <h3 class="pricing-card__type">PAID PLANS</h3>
+            <p class="pricing-card__desc">
+              Standard plans with premium features to grow online, convert
+              leads, and get sales
+            </p>
+            <div class="pricing-card__price">
+              <span class="price-val">$13.30</span> /mo
+            </div>
+            <div class="pricing-card__features-title">
+              Everything from Free and more
+            </div>
+            <ul class="pricing-card__features">
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Email marketing
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Website builder
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Connect a domain
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />List for up to 500 contacts
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Landing pages
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Signup and contact forms
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-card">
+            <h3 class="pricing-card__type">FREE</h3>
+            <p class="pricing-card__desc">
+              Designed for businesses ready to get online easily.
+            </p>
+            <div class="pricing-card__price">Custom pricing</div>
+            <div class="pricing-card__features-title">
+              Everything from paid and more.
+            </div>
+            <ul class="pricing-card__features">
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Email marketing
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Website builder
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Connect a domain
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />List for up to 500 contacts
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Landing pages
+              </li>
+              <li>
+                <img
+                  src="assets/img/icon-check-blue.png"
+                  class="check-icon"
+                  alt=""
+                />Signup and contact forms
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pricing__action">
+          <a href="#" class="btn btn-yellow btn-pill">EXPLORE ALL FEATURES</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-banner-section">
+      <div class="container">
+        <div class="growth-banner">
+          <h3 class="growth-banner__text">
+            Are you ready to get your<br />business growing?
+          </h3>
+          <form class="growth-banner__form" action="#">
+            <input
+              type="email"
+              class="growth-banner__input"
+              required
+              aria-label="Email"
+            />
+            <button
+              type="submit"
+              class="btn btn-yellow btn-pill growth-banner__btn"
+            >
+              START FOR FREE
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <script src="assets/js/script.js"></script>
   </body>
