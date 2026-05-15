@@ -202,6 +202,14 @@ input, button, textarea, select {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
+.dropdown__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: inherit; /* Takes the color from the parent */
+  text-decoration: none; /* Removes the default underline */
+}
+
 .dropdown-item:hover .dropdown {
   display: block;
 }
@@ -1073,6 +1081,351 @@ input, button, textarea, select {
   color: #12B3FF;
 }
 
+.email-feature-hero {
+  padding: 100px 0;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.email-feature-hero__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.email-feature-hero__title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.highlight-marketing {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.highlight-marketing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+  background-color: #FFE600;
+  z-index: -1;
+  border-radius: 8px 12px 10px 14px / 10px 12px 14px 8px;
+  transform: rotate(-1deg);
+}
+
+.email-feature-hero__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1A1A1A;
+  margin-bottom: 15px;
+}
+
+.email-feature-hero__desc {
+  font-size: 18px;
+  color: #4A4A4A;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.email-feature-hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.btn-orange {
+  background-color: #FA7F44;
+  color: #ffffff;
+  padding: 14px 32px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.btn-orange:hover {
+  background-color: #E56A2F;
+}
+
+.email-feature-hero__visual {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.email-feature-hero__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Email Types Section --- */
+.email-types {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+/* Yellow brush stroke specifically for this title */
+.highlight-type {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.highlight-type::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  bottom: 10%;
+  left: -10px;
+  right: -15px;
+  background-color: #FFE600;
+  z-index: -1;
+  border-radius: 10px 15px 10px 15px / 10px 5px 15px 5px;
+  transform: rotate(-1deg);
+}
+
+/* Grid Layout */
+.email-types__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 80px;
+  column-gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+/* Individual Card Styling */
+.type-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.type-card__icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  min-height: 80px; /* Ensures all titles align even if some icons are shorter */
+}
+
+.type-card__icon {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* The Free Forever Pill Badge */
+.badge-free {
+  background-color: #FFE600;
+  color: #1A1A1A;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  bottom: -15px; /* Pulls it down so it overlaps the bottom of the icon slightly */
+  white-space: nowrap;
+}
+
+.type-card__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin-bottom: 15px;
+}
+
+.type-card__desc {
+  font-size: 15px;
+  color: #4A4A4A;
+  line-height: 1.6;
+  max-width: 290px;
+}
+
+/* --- Design Features Section --- */
+.design-features {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.design-features__header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.design-features__title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+/* Yellow brush stroke highlight */
+.highlight-tools {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.highlight-tools::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  bottom: 10%;
+  left: -10px;
+  right: -10px;
+  background-color: #FFE600;
+  z-index: -1;
+  border-radius: 8px 12px 8px 15px / 12px 8px 15px 8px;
+  transform: rotate(-1deg);
+}
+
+.design-features__subtitle {
+  font-size: 18px;
+  color: #4A4A4A;
+}
+
+/* --- Feature Blocks (Row Layout) --- */
+.feature-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.feature-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Modifier to flip the order for the second row */
+.feature-block--reverse .feature-block__content {
+  order: 2;
+}
+
+.feature-block--reverse .feature-block__visual {
+  order: 1;
+}
+
+/* --- Content Styling --- */
+.feature-block__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.feature-block__desc {
+  font-size: 16px;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.text-link {
+  color: #12B3FF;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Custom Blue Dot Bullet List */
+.custom-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+}
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #1A1A1A;
+  line-height: 1.5;
+}
+
+.custom-bullet-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background-color: #12B3FF;
+  border-radius: 50%;
+}
+
+.action-link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  color: #12B3FF;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.action-link:hover {
+  color: #0A69D2;
+}
+
+/* --- Visuals --- */
+.feature-block__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.feature-block__img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+/* Abstract blue shape behind the first visual */
+.visual-bg-blob {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 90%;
+  height: 110%;
+  background-color: #12B3FF;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  z-index: 1;
+  transform: rotate(-15deg);
+}
+
+/* --- Responsive Media Queries --- */
+
+
 @media screen and (max-width: 768px) {
   
   :root {
@@ -1392,6 +1745,58 @@ input, button, textarea, select {
   .footer__legal {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .email-feature-hero {
+    padding: 60px 0;
+  }
+
+  .email-feature-hero__title {
+    font-size: 32px;
+  }
+
+  .email-feature-hero__subtitle {
+    font-size: 18px;
+  }
+
+  .email-feature-hero__desc {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .email-feature-hero__actions {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .email-feature-hero__actions .btn {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .email-types {
+    padding: 60px 0;
+  }
+  
+  .email-types__grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding: 0 15px;
+  }
+
+  .design-features {
+    padding: 60px 0;
+  }
+
+  .highlight-tools::before {
+    top: 0;
+    height: 100%;
+  }
+
+  .feature-block{
+    grid-template-columns: 1fr;
   }
 
 }
