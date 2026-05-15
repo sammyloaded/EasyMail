@@ -9,7 +9,7 @@ Easymail is a modern, responsive email marketing SaaS frontend prototype. It fea
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Premium SaaS UI:** High-converting landing pages built with modern CSS flexbox/grid and the Nunito Sans typography.
 - **Secure Authentication:** Integrated Firebase Email/Password authentication with protected routing.
@@ -19,7 +19,7 @@ Easymail is a modern, responsive email marketing SaaS frontend prototype. It fea
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)
 - **Backend / Auth:** Google Firebase (Web SDK v10)
@@ -29,7 +29,7 @@ Easymail is a modern, responsive email marketing SaaS frontend prototype. It fea
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 EASYMAIL/
