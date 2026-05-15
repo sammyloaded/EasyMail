@@ -50,13 +50,16 @@
           <a href="#" class="nav-item"
             ><i class="ph ph-layout"></i> Templates</a
           >
+          <a href="#" class="nav-item" id="logoutBtn"
+            ><i class="ph ph-sign-out"></i> Log Out</a
+          >
         </nav>
 
         <div class="sidebar__footer">
           <a href="#" class="nav-item"><i class="ph ph-gear"></i> Settings</a>
-          <a href="#" class="nav-item" id="logoutBtn"
+          <!-- <a href="#" class="nav-item" id="logoutBtn"
             ><i class="ph ph-sign-out"></i> Log Out</a
-          >
+          > -->
         </div>
       </aside>
 
@@ -66,14 +69,16 @@
             <button class="mobile-menu-btn" id="openSidebar">
               <i class="ph ph-list"></i>
             </button>
-            <h1 class="page-title">Welcome back, Solomon 👋</h1>
+            <h1 class="page-title">
+              Welcome back, <span id="userNameDisplay">...</span> 👋
+            </h1>
           </div>
           <div class="top-header__right">
             <button class="btn-icon"><i class="ph ph-bell"></i></button>
-            <button class="btn btn-primary btn-pill shadow-sm">
+            <!-- <button class="btn btn-primary btn-pill shadow-sm">
               <i class="ph ph-plus" style="margin-right: 5px"></i> Create
               Campaign
-            </button>
+            </button> -->
           </div>
         </header>
 
@@ -201,6 +206,6 @@
       </section>
     </div>
 
-    <script src="assets/js/dashboard.js"></script>
+    <script type="module" src="assets/js/dashboard.js"></script>
   </body>
 </html>

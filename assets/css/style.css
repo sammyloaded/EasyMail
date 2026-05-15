@@ -2225,7 +2225,7 @@ input, button, textarea, select {
 
   .btn {
     width: 100%;
-    padding: 1px 25px;
+    padding: 10px 25px;
   }
   
   .btn-text {
