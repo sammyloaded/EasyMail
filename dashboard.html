@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Easymail</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="dashboard-body">
+    <div class="app-layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar__header">
+          <a href="index.html" class="logo">Easymail</a>
+          <button class="mobile-close" id="closeSidebar">
+            <i class="ph ph-x"></i>
+          </button>
+        </div>
+
+        <div class="sidebar__workspace">
+          <div class="workspace-avatar">SC</div>
+          <div class="workspace-info">
+            <span class="workspace-name">Sammyloaded Concepts</span>
+            <span class="workspace-plan">Free Plan</span>
+          </div>
+          <i class="ph ph-caret-down"></i>
+        </div>
+
+        <nav class="sidebar__nav">
+          <a href="#" class="nav-item active"
+            ><i class="ph ph-squares-four"></i> Dashboard</a
+          >
+          <a href="#" class="nav-item"
+            ><i class="ph ph-envelope-simple"></i> Campaigns</a
+          >
+          <a href="#" class="nav-item"><i class="ph ph-users"></i> Audience</a>
+          <a href="#" class="nav-item"
+            ><i class="ph ph-lightning"></i> Automations</a
+          >
+          <a href="#" class="nav-item"
+            ><i class="ph ph-layout"></i> Templates</a
+          >
+        </nav>
+
+        <div class="sidebar__footer">
+          <a href="#" class="nav-item"><i class="ph ph-gear"></i> Settings</a>
+          <a href="#" class="nav-item" id="logoutBtn"
+            ><i class="ph ph-sign-out"></i> Log Out</a
+          >
+        </div>
+      </aside>
+
+      <section class="main-content">
+        <header class="top-header">
+          <div class="top-header__left">
+            <button class="mobile-menu-btn" id="openSidebar">
+              <i class="ph ph-list"></i>
+            </button>
+            <h1 class="page-title">Welcome back, Solomon 👋</h1>
+          </div>
+          <div class="top-header__right">
+            <button class="btn-icon"><i class="ph ph-bell"></i></button>
+            <button class="btn btn-primary btn-pill shadow-sm">
+              <i class="ph ph-plus" style="margin-right: 5px"></i> Create
+              Campaign
+            </button>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-card__header">
+                <span class="metric-card__title">Total Audience</span>
+                <div class="metric-icon blue-bg">
+                  <i class="ph ph-users"></i>
+                </div>
+              </div>
+              <div class="metric-card__value">12,450</div>
+              <div class="metric-card__trend positive">
+                <i class="ph ph-trend-up"></i> 12.5% vs last month
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-card__header">
+                <span class="metric-card__title">Avg. Open Rate</span>
+                <div class="metric-icon yellow-bg">
+                  <i class="ph ph-envelope-open"></i>
+                </div>
+              </div>
+              <div class="metric-card__value">24.8%</div>
+              <div class="metric-card__trend positive">
+                <i class="ph ph-trend-up"></i> 2.1% vs last month
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-card__header">
+                <span class="metric-card__title">Avg. Click Rate</span>
+                <div class="metric-icon orange-bg">
+                  <i class="ph ph-cursor-click"></i>
+                </div>
+              </div>
+              <div class="metric-card__value">4.2%</div>
+              <div class="metric-card__trend negative">
+                <i class="ph ph-trend-down"></i> 0.5% vs last month
+              </div>
+            </div>
+
+            <div class="metric-card">
+              <div class="metric-card__header">
+                <span class="metric-card__title">Emails Sent</span>
+                <div class="metric-icon green-bg">
+                  <i class="ph ph-paper-plane-tilt"></i>
+                </div>
+              </div>
+              <div class="metric-card__value">45,200</div>
+              <div class="metric-card__trend neutral">This month</div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid-main">
+            <div class="panel">
+              <div class="panel__header">
+                <h3 class="panel__title">Audience Growth</h3>
+                <select class="panel__select">
+                  <option>Last 30 Days</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+              <div class="panel__body">
+                <canvas id="growthChart" height="250"></canvas>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel__header">
+                <h3 class="panel__title">Recent Campaigns</h3>
+                <a href="#" class="panel__link">View All</a>
+              </div>
+              <div class="panel__body p-0">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Campaign Name</th>
+                      <th>Status</th>
+                      <th>Sent/Scheduled</th>
+                      <th class="text-right">Open Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fw-bold">February Newsletter</td>
+                      <td>
+                        <span class="status-badge status-sent">Sent</span>
+                      </td>
+                      <td>Feb 14, 2026</td>
+                      <td class="text-right fw-bold">26.4%</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Welcome Series #1</td>
+                      <td>
+                        <span class="status-badge status-active">Active</span>
+                      </td>
+                      <td>Automated</td>
+                      <td class="text-right fw-bold">42.1%</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Spring Sale Promo</td>
+                      <td>
+                        <span class="status-badge status-draft">Draft</span>
+                      </td>
+                      <td>-</td>
+                      <td class="text-right text-muted">-</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Product Update v2.0</td>
+                      <td>
+                        <span class="status-badge status-sent">Sent</span>
+                      </td>
+                      <td>Jan 28, 2026</td>
+                      <td class="text-right fw-bold">22.8%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+  </body>
+</html>
