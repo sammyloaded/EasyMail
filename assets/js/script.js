@@ -77,3 +77,19 @@ const initNavigation = () => {
 
 // Start the navigation script after DOM content is loaded
 document.addEventListener('DOMContentLoaded', initNavigation);
+
+const signupButton = document.getElementById('signupBtn');
+
+signupButton.addEventListener('click', () => {
+  window.location.href = 'register.html';
+});
+
+//Growth Form
+
+const growthForm = document.getElementById('growthForm');
+
+growthForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Stops the form from refreshing the page
+  
+  window.location.href = 'register.html';
+});

@@ -95,18 +95,24 @@ if (ctx) {
 
 // Protect the route and fetch user name
 const userNameDisplay = document.getElementById('userNameDisplay');
+const appLayout = document.querySelector('.app-layout');
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    // User is logged in!
+    // User IS logged in! Un-hide the dashboard layout.
+    if (appLayout) {
+      appLayout.style.display = 'flex';
+    }
+
     const fullName = user.displayName || 'User';
-    const firstName = fullName.split(' ')[0]; // Gets just the first name
+    const firstName = fullName.split(' ')[0]; 
     
     if(userNameDisplay) {
       userNameDisplay.textContent = firstName;
     }
   } else {
-    // Kick them to login page if they try to view dashboard while logged out
+    // User is NOT logged in. Show the error and redirect immediately.
+    alert('You are not Logged In, Please login to Go to dashboard');
     window.location.href = 'login.html';
   }
 });
